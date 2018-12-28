@@ -40,7 +40,7 @@ public class customRunner extends AbstractTestNGCucumberTests{
 	@BeforeTest
 	public static String getBrowserType(ITestContext test){
 		type = customRunner.getBrowsers().get(test.getName());
-		return customRunner.getBrowsers().get(test.getName());
+		return type;
 	}
 //
 //	@Parameters("browser")
@@ -51,13 +51,7 @@ public class customRunner extends AbstractTestNGCucumberTests{
 //		new TestRun(this.getClass());
 //	}
 
-	// public static String getBrowser(){
-	// return browserType;
-	// }
-
-	// public customRunner(){
-	//
-	// }
+	
 
 	/*@Override
 	public void run(IHookCallBack callBack, ITestResult testResult) {
